@@ -17,73 +17,12 @@ Design a Game Tic Tac Toe in c ++, Read the Input from A file
 * winner function also check if no body wins is it a tie ?
 * function check is game going on if yes it should suggest a Move 
 
-
- 
-/Users/soumilshah/CLionProjects/Assingment1/cmake-build-debug/Assingment1
-
-Welcome to Tic Tac Toe Game
-
-e | e | e | 
-e | e | e | 
-e | e | e | 
-
-
-A B X X X E E E S Invalid
-
-X X X X X O O O E Invalid
-
-X e O X X O e e O Valid Sequence 
-
-X | e | O | 
-X | X | O | 
-e | e | O | 
-Winner O
+# outputs
+<img width="393" alt="Screen Shot 2019-09-08 at 11 44 21 AM" src="https://user-images.githubusercontent.com/39345855/64490722-0a05ed80-d22e-11e9-9c79-a3c1768e2364.png">
 
 
 
-X O X e X O X e O Valid Sequence 
-
-X | O | X | 
-e | X | O | 
-X | e | O | 
-Winner X
+<img width="299" alt="Screen Shot 2019-09-08 at 11 44 30 AM" src="https://user-images.githubusercontent.com/39345855/64490730-15591900-d22e-11e9-9cc9-34ff37633f6a.png">
 
 
-
-X O O O X X X X O Valid Sequence 
-
-X | O | O | 
-O | X | X | 
-X | X | O | 
-Match Tie
-
-
-e O O O X X X X O Valid Sequence 
-
-e | O | O | 
-O | X | X | 
-X | X | O | 
-
-Player X Turn
-
-Suggested Move by Coputer  
-x | O | O | 
-O | X | X | 
-X | X | O | 
-
-
-e X O O X X X O O Valid Sequence 
-
-e | X | O | 
-O | X | X | 
-X | O | O | 
-
-Player O Turn 
-
-Suggested Move by Computer  
-o | X | O | 
-O | X | X | 
-X | O | O | 
-
-Process finished with exit code 0
 
