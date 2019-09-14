@@ -17,6 +17,8 @@ string
 -
 iostream
 -
+ctime
+-
 
 /Users/soumilshah/CLionProjects/Assingment1/TicTacToe.h
 TicTacToe.h
@@ -26,5 +28,9 @@ fstream
 vector
 -
 string
+-
+iostream
+-
+ostream
 -
 

@@ -1,0 +1,88 @@
+xxxxx : Invalid Length 
+-----------------------------------------------
+abxxxeeey : Invalid Letters ! 
+-----------------------------------------------
+xxxxxoooe : Impossible Position !
+-----------------------------------------------
+xeoxxoeeo:-Input String 
+
+x | e | o | 
+x | x | o | 
+e | e | o | 
+
+Winner O
+
+-----------------------------------------------
+xoxexoxeo:-Input String 
+
+x | o | x | 
+e | x | o | 
+x | e | o | 
+
+Winner X
+
+-----------------------------------------------
+xoooxxxxo:-Input String 
+
+x | o | o | 
+o | x | x | 
+x | x | o | 
+
+Match Tie
+-----------------------------------------------
+eoooxxxxo:-Input String 
+
+e | o | o | 
+o | x | x | 
+x | x | o | 
+
+X Turn 
+
+Suggested Move by Computer  
+
+X | o | o | 
+o | x | x | 
+x | x | o | 
+-----------------------------------------------
+eeeexeeee:-Input String 
+
+e | e | e | 
+e | x | e | 
+e | e | e | 
+
+O Turn 
+
+Suggested Move by Computer  
+
+e | e | e | 
+e | x | e | 
+e | O | e | 
+-----------------------------------------------
+eeeeoeeee:-Input String 
+
+e | e | e | 
+e | o | e | 
+e | e | e | 
+
+X Turn 
+
+Suggested Move by Computer  
+
+e | e | e | 
+e | o | e | 
+e | X | e | 
+-----------------------------------------------
+oxoxoeeee:-Input String 
+
+o | x | o | 
+x | o | e | 
+e | e | e | 
+
+X Turn 
+
+Suggested Move by Computer  
+
+o | x | o | 
+x | o | X | 
+e | e | e | 
+-----------------------------------------------
