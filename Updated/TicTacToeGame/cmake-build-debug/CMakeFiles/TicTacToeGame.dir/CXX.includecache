@@ -32,11 +32,3 @@ string
 iostream
 -
 
-/Users/soumilshah/CLionProjects/TicTacToeGame/main.cpp
-iostream
--
-fstream
--
-TicTacToe.h
-/Users/soumilshah/CLionProjects/TicTacToeGame/TicTacToe.h
-

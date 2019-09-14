@@ -10,6 +10,7 @@
 #include <ctime>
 using namespace std;
 
+ofstream fout("output.txt");
 
 TicTacToe::TicTacToe() {
 
@@ -19,16 +20,19 @@ TicTacToe::TicTacToe() {
      */
 
     cout << "\n" << "Welcome to Tic Tac Toe Game" << "\n" <<endl;
+    fout << "\n" << "Welcome to Tic Tac Toe Game" << "\n" <<endl;
 
     for(size_t i=0 ; i<Matrix.size(); i ++){        // Row
         for(size_t j=0 ; j<Matrix.size(); j ++){    //COL
             cout << Matrix.at(i).at(j)<<" | ";      // Display on Console
+            fout << Matrix.at(i).at(j)<<" | ";      // Display on Console
 
         }
         cout << endl;
+        fout << endl;
     }
     cout << "\n";
-
+    fout << "\n";
 }
 
 TicTacToe::~TicTacToe() {}
@@ -45,6 +49,7 @@ void TicTacToe:: setPosition(string pos){
     {
         Tem.push_back(x);
         cout << x << " ";
+        fout << x << " ";
     }
     mydata.push_back(Tem);
 
@@ -55,93 +60,130 @@ void TicTacToe:: setPosition(string pos){
     {
         cout << "Invalid Letters ! " << endl;
         cout << "-----------------------------------------------" << endl;
+        fout << "Invalid Letters ! " << endl;
+        fout << "-----------------------------------------------" << endl;
 
     }
     else if(value == 'B')
     {
         cout << "Invalid Length " << endl;
         cout << "-----------------------------------------------" << endl;
+        fout << "Invalid Length " << endl;
+        fout << "-----------------------------------------------" << endl;
 
     }
     else if(value == 'C')
     {
         cout << "Impossible Position !" << endl;
         cout << "-----------------------------------------------" << endl;
-
+        fout << "Impossible Position !" << endl;
+        fout << "-----------------------------------------------" << endl;
     }
     else
-        {
+    {
 
-    // valid String
+        // valid String
 
         cout << ":-Input String " << endl;
         cout << "\n";
+        fout << ":-Input String " << endl;
+        fout << "\n";
         print_matrix(Tem);
 
 
         char winner;
         winner = win(Matrix);
 
-            if (winner == 'X')
-            {
-                cout << "\n";
-                cout << "Winner " << "X" << endl;
-                cout << "\n";
-                cout << "-----------------------------------------------" << endl;
-            }
-            else if(winner == 'O')
-            {
-                cout << "\n";
-                cout << "Winner " << "O" << endl;
-                cout << "\n";
-                cout << "-----------------------------------------------" << endl;
-            }
+        if (winner == 'X')
+        {
+            cout << "\n";
+            cout << "Winner " << "X" << endl;
+            cout << "\n";
+            cout << "-----------------------------------------------" << endl;
 
-            else if (winner == 'M')
-            {
-                cout << "\n";
-                cout << "Match Tie" << endl;
-                cout << "-----------------------------------------------" << endl;
-            }
-
-            else if(winner == 'A')
-            {
-                cout << "\n";
-                cout << "X Turn " << endl;
-                cout << "\n";
-                cout << "Suggested Move by Computer  " << endl;
-
-                vector <char> ComputedMove;
-                cout << "\n";
-                ComputedMove = computer_move(Tem, 'X');
-                print_matrix(ComputedMove);
-
-                ComputedMove.clear();
-
-                cout << "\n";
-                cout << "-----------------------------------------------" << endl;
-            }
-
-
-            else if(winner == 'B')
-            {
-                cout << "\n";
-                cout << "O Turn " << endl;
-                cout << "\n";
-                cout << "Suggested Move by Computer  " << endl;
-
-                vector <char> ComputedMove;
-                cout << "\n";
-                ComputedMove = computer_move(Tem, 'O');
-                print_matrix(ComputedMove);
-
-                ComputedMove.clear();
-
-                cout << "-----------------------------------------------" << endl;
-            }
-
+            fout << "\n";
+            fout << "Winner " << "X" << endl;
+            fout << "\n";
+            fout << "-----------------------------------------------" << endl;
 
         }
+        else if(winner == 'O')
+        {
+            cout << "\n";
+            cout << "Winner " << "O" << endl;
+            cout << "\n";
+            cout << "-----------------------------------------------" << endl;
+
+
+            fout << "\n";
+            fout << "Winner " << "O" << endl;
+            fout << "\n";
+            fout << "-----------------------------------------------" << endl;
+        }
+
+        else if (winner == 'M')
+        {
+            cout << "\n";
+            cout << "Match Tie" << endl;
+            cout << "-----------------------------------------------" << endl;
+
+            fout << "\n";
+            fout << "Match Tie" << endl;
+            fout << "-----------------------------------------------" << endl;
+        }
+
+        else if(winner == 'A')
+        {
+            cout << "\n";
+            cout << "X Turn " << endl;
+            cout << "\n";
+            cout << "Suggested Move by Computer  " << endl;
+
+            fout << "\n";
+            fout << "X Turn " << endl;
+            fout << "\n";
+            fout << "Suggested Move by Computer  " << endl;
+
+            vector <char> ComputedMove;
+            cout << "\n";
+            fout << "\n";
+            ComputedMove = computer_move(Tem, 'X');
+            print_matrix(ComputedMove);
+
+            ComputedMove.clear();
+
+            cout << "\n";
+            cout << "-----------------------------------------------" << endl;
+            fout << "\n";
+            fout << "-----------------------------------------------" << endl;
+        }
+
+
+        else if(winner == 'B')
+        {
+            cout << "\n";
+            cout << "O Turn " << endl;
+            cout << "\n";
+            cout << "Suggested Move by Computer  " << endl;
+            fout << "\n";
+            fout << "O Turn " << endl;
+            fout << "\n";
+            fout << "Suggested Move by Computer  " << endl;
+
+            vector <char> ComputedMove;
+            cout << "\n";
+            fout << "\n";
+            ComputedMove = computer_move(Tem, 'O');
+            print_matrix(ComputedMove);
+
+            ComputedMove.clear();
+
+            cout << "-----------------------------------------------" << endl;
+            fout << "-----------------------------------------------" << endl;
+        }
+
+
+    }
 
     Tem.clear();
 }
@@ -221,10 +263,12 @@ void TicTacToe:: print_matrix(vector <char> Sequence){
 
             Matrix.at(i).at(j) = Sequence[counter];
             cout << Matrix.at(i).at(j) << " | ";
+            fout << Matrix.at(i).at(j) << " | ";
             counter = counter +1;
 
         }
         cout << endl;
+        fout << endl;
     }
     counter = 0;
 }
@@ -362,9 +406,6 @@ char TicTacToe::win(vector <vector <char>> Matrix){
         return 'B';
     }
 
-    cout << "CountX " << CountX << endl;
-    cout << "CountO " << CountO << endl;
-    cout << "CountE" << CountE << endl;
 
 }
 

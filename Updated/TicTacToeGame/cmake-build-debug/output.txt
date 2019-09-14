@@ -1,0 +1,98 @@
+
+Welcome to Tic Tac Toe Game
+
+e | e | e | 
+e | e | e | 
+e | e | e | 
+
+x x x x x Invalid Length 
+-----------------------------------------------
+a b x x x e e e y Invalid Letters ! 
+-----------------------------------------------
+x x x x x o o o e Impossible Position !
+-----------------------------------------------
+x e o x x o e e o :-Input String 
+
+x | e | o | 
+x | x | o | 
+e | e | o | 
+
+Winner O
+
+-----------------------------------------------
+x o x e x o x e o :-Input String 
+
+x | o | x | 
+e | x | o | 
+x | e | o | 
+
+Winner X
+
+-----------------------------------------------
+x o o o x x x x o :-Input String 
+
+x | o | o | 
+o | x | x | 
+x | x | o | 
+
+Match Tie
+-----------------------------------------------
+e o o o x x x x o :-Input String 
+
+e | o | o | 
+o | x | x | 
+x | x | o | 
+
+X Turn 
+
+Suggested Move by Computer  
+
+X | o | o | 
+o | x | x | 
+x | x | o | 
+
+-----------------------------------------------
+e e e e x e e e e :-Input String 
+
+e | e | e | 
+e | x | e | 
+e | e | e | 
+
+O Turn 
+
+Suggested Move by Computer  
+
+e | O | e | 
+e | x | e | 
+e | e | e | 
+-----------------------------------------------
+e e e e o e e e e :-Input String 
+
+e | e | e | 
+e | o | e | 
+e | e | e | 
+
+X Turn 
+
+Suggested Move by Computer  
+
+e | X | e | 
+e | o | e | 
+e | e | e | 
+
+-----------------------------------------------
+o x o x o e e e e :-Input String 
+
+o | x | o | 
+x | o | e | 
+e | e | e | 
+
+X Turn 
+
+Suggested Move by Computer  
+
+o | x | o | 
+x | o | X | 
+e | e | e | 
+
+-----------------------------------------------
